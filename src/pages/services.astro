@@ -1,0 +1,37 @@
+---
+import Header from '../components/Header.astro';
+import Typography from '../components/Typography.astro';
+const pageTitle = "Our Services";
+const residentialServices = ["Lighting", "Panel Switches", "Remodeling","Fixtures"]
+const serviceAreas = ["Dallas", "Addison", "Carrolton", "Plano","Richardson"]
+import '../styles/global.css';
+---
+k
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<Typography/>
+		<title>{ pageTitle }</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div>
+					<Header/>
+				</div>
+			</nav>
+		</header>
+        <body>
+            <h1>{ pageTitle }</h1>
+			<p>{ pageTitle } are:</p>
+			<ul>
+				{residentialServices.map((service) => <li class="services-el">{service}</li>)}
+			</ul>
+			<script>
+				import "../scripts/menu.js"
+			</script>
+          </body>
+</html>

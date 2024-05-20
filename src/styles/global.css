@@ -1,0 +1,188 @@
+/************************************************Elad Shechter's RESET **************************/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+button {
+    background-color: transparent;
+    color: inherit;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+}
+figure {
+    margin: 0;
+}
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+ul,
+ol,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+p {
+    margin: 0;
+}
+cite {
+    font-style: normal;
+}
+fieldset {
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+}
+/******************************************** CUSTOM PROPERTIES  *******************/
+:root {
+    --ff-primary: "Teko", sans-serif;
+    --ff-secondary: ;
+    
+    --fw-reg: 400;
+    --fw-bold: 800;
+    
+    --clr-light: #fff;
+    --clr-dark:#212529 ;
+    --clr-accent: #12B457;
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+    header  {
+        padding: 1rem;
+    }
+}
+/**************************************************************GENERAL STYLES***********************************/
+body {
+    font-family: var(--ff-primary);
+    text-align: center;
+    max-width: 100vw;
+    background-color: var(--clr-dark);
+}
+h1 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h1);
+}
+h3 {
+    font-size: var(--fs-h3);
+}
+
+                                                    /* HEADER */
+header {
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    border-bottom: 1px solid #fff;
+}
+.green-logo {
+    width: 13rem;
+}
+.name-logo-el {
+    display: flex;
+    cursor: pointer;
+}
+
+/*  HAMBURGER-MENU */
+
+.hamburger-menu {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: .3rem;
+}
+
+.ham-bar {
+    width: 70%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:
+        transform 0.5ms,
+        opacity 0.5ms,
+        top 0.5ms;
+}
+
+.bar-top {
+    top: 25%;
+}
+
+.bar-bottom {
+    top: 75%;
+}
+.hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+    background-color: var(--clr-dark);
+}
+.hamburger-menu.active .bar-mid {
+    opacity: 0;
+}
+.hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+    background-color: var(--clr-dark);
+}
+/* NAV-MENU */
+.hidden-menu {
+    position: fixed;
+    display: none;
+}
+.hidden-menu.active {
+    right: 0;
+    background-color: var(--clr-light);
+    opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    transition: left 0.5s;
+    top: 0;
+    height: 60vh;
+    width: 100%;
+    border-bottom: 10px solid var(--clr-accent);
+}
+.nav-items {
+    color: var(--clr-accent);
+    font-size: var(--fs-h3);
+}
+.van-cta-el {
+    align-self: start;
+    justify-self: end;
+    border: 1px solid var(--clr-accent);
+}

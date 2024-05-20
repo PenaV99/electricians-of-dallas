@@ -1,0 +1,55 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Typography from '../components/Typography.astro';
+const pageTitle = 'Electricians of Dallas';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<Typography />
+		<title>{ pageTitle }</title>
+		<style>
+			.hero {
+				width: 100%;
+				border: 1px solid red;
+			}
+			.cta-estimates {
+				text-align: right;
+				background-color: var(--clr-accent);
+			}
+			.services-section {
+				background-color: var(--clr-light);
+			}
+			.services__list {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding: .8em;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<Header/>
+		<div class="cta-estimates">
+			
+		</div>
+		<section class="services-section">
+			<ul class="services__list">
+				<li><h3>Commercial</h3></li>
+				<li><h3>Residential</h3></li>
+				<li><h3>Indoor</h3></li>
+				<li><h3>Outdoor</h3></li>
+				<li><h3>General</h3></li>
+			</ul>
+		</section>
+		<script>
+			import "../scripts/menu.js"
+		</script>
+	</body>
+</html>
