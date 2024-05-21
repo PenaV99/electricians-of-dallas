@@ -59,13 +59,13 @@ fieldset {
 :root {
     --ff-primary: "Teko", sans-serif;
     --ff-secondary: ;
-    
+
     --fw-reg: 400;
     --fw-bold: 800;
-    
+
     --clr-light: #fff;
-    --clr-dark:#212529 ;
-    --clr-accent: #12B457;
+    --clr-dark: #212529;
+    --clr-accent: #12b457;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -78,7 +78,7 @@ fieldset {
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
-    header  {
+    header {
         padding: 1rem;
     }
 }
@@ -97,7 +97,7 @@ h3 {
     font-size: var(--fs-h3);
 }
 
-                                                    /* HEADER */
+/* HEADER */
 header {
     background-color: #212529;
     display: flex;
@@ -121,7 +121,7 @@ header {
     position: relative;
     cursor: pointer;
     padding: 1rem;
-    margin-top: .3rem;
+    margin-top: 0.3rem;
 }
 
 .ham-bar {
@@ -170,7 +170,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     transition: top 0.5s;
     top: 0;
     height: 60vh;
@@ -180,19 +180,23 @@ header {
 .hidden-menu__list {
     background-color: var(--clr-dark);
     width: 100%;
+    margin-top: 3rem;
+}
+.menu__logo {
+    border: 1px solid red;
 }
 .menu__logo img {
-    width: 4rem;
+    width: 3rem;
+    margin: 0 auto;
+    border: 1px solid blue;
 }
 .nav-items {
     color: var(--clr-accent);
     font-size: var(--fs-h3);
     font-weight: 600;
-    padding-bottom: 1rem;
 }
 .van-cta-el {
     align-self: end;
-    justify-self: end;
     margin: 0;
     padding: 0;
 }
