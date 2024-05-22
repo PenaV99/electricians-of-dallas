@@ -14,12 +14,27 @@ const pageTitle = "Electricians of Dallas";
         <title>{pageTitle}</title>
         <style>
             .hero {
-                width: 100%;
+                min-width: 100%;
                 border: 1px solid red;
             }
-            .cta-estimates {
-                text-align: right;
-                background-color: var(--clr-accent);
+            .cta-contact-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                color: var(--clr-light);
+            }
+            .slogan-el {
+                margin: 0 auto;
+                text-align: center;
+                padding: 0 1rem;
+                color: #FF3131;
+                border-bottom: 1px solid var(--clr-dark);
+            }
+            .cta-contact {
+                background-color: var(--clr-dark);
+                justify-content: space-evenly;
+                padding: .3rem;
+                flex: 1;
             }
             .services-section {
                 background-color: var(--clr-light);
@@ -27,28 +42,42 @@ const pageTitle = "Electricians of Dallas";
             .services__list {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
-                padding: 0.8em;
+                justify-content: space-around;
+                min-width: 100%;
+                margin: 0 auto;
+                border-bottom: 1px solid var(--clr-accent);
             }
             .business-info {
-                color: #fff;
+                color: var(--clr-light);
+            }
+            @media (min-width: 1024px) {
+            .services__list {
+                padding: 0 2em;
+                font-weight: 600;
+            }
             }
         </style>
     </head>
     <body>
         <Header />
-        <div class="cta-estimates"></div>
         <section class="services-section">
             <ul class="services__list">
                 <li><h3>Commercial</h3></li>
                 <li><h3>Residential</h3></li>
                 <li><h3>Indoor</h3></li>
                 <li><h3>Outdoor</h3></li>
-                <li><h3>General</h3></li>
+                <li><h3>General</h3></li> 
             </ul>
         </section>
+        <section class="cta-contact-wrapper">
+            <h1 class="slogan-el"><em>Your electricians for life</em></h1>
+            <div class="cta-contact">
+                <h3><i class="fa-solid fa-location-dot" style="color: #FF3131;"></i>Carrollton, TX</h3>
+                <h3><i class="fa-solid fa-phone" style="color: #007ea7;"></i>214-000-000</h3>
+            </div>
+        </section>
         <section class="business-info">
-            <h1>Give us a call</h1>
+            
         </section>
         <script>
             import "../scripts/menu.js";
