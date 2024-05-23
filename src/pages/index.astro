@@ -28,10 +28,15 @@ const pageTitle = "Electricians of Dallas";
                 padding: 0 1rem;
                 color: #FF3131;
                 text-align: center;
-                border-top: 2px solid #03045e;
+            }
+            .slogan-el span {
+                display: block;
             }
             .services-section {
                 background-color: var(--clr-light);
+                border-bottom: 2px solid var(--clr-accent);
+                border-top: 2px solid var(--clr-accent);
+                
             }
             .services__list {
                 display: flex;
@@ -46,7 +51,7 @@ const pageTitle = "Electricians of Dallas";
             .header-contact-button {
             color: var(--clr-light);
             font-weight: 700;
-            background-color: var(--clr-accent);
+            background-color: #136f63;
             display: flex;
             width: 100%;
             justify-content: space-between;
@@ -54,13 +59,17 @@ const pageTitle = "Electricians of Dallas";
             }
 
             @media (min-width: 1024px) {
+            .header-contact-button {
+             justify-content: space-evenly;
+            }
             .services__list {
                 padding: 0 2em;
                 font-weight: 600;
             }
-            .slogan-el {
-                flex: 1;
+            .slogan-el span {
+                display: inline;
             }
+
             .cta-wrapper {
                 flex-direction: row;
             }
