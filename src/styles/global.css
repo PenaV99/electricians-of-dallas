@@ -96,6 +96,7 @@ h1 {
 }
 h2 {
     font-size: var(--fs-h2);
+    font-weight: 600;
 }
 h3 {
     font-size: var(--fs-h3);
@@ -107,7 +108,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: top;
-    border-bottom: 1px solid var(--clr-accent);
+    border-bottom: 2px solid #0466c8;
 }
 .green-logo {
     width: 13rem;
@@ -116,6 +117,22 @@ header {
     display: flex;
     cursor: pointer;
 }
+.cta-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--clr-accent);
+    background-color: var(--clr-light);
+    padding: .3rem;
+    text-align: left;
+    border: 1px solid purple;
+}
+.van-cta-el {
+    align-self: end;
+    margin: 0;
+    padding: 0;
+    border: 1px solid blue;
+    }
 
 /*  HAMBURGER-MENU */
 
@@ -197,9 +214,4 @@ header {
     color: var(--clr-accent);
     font-size: var(--fs-h3);
     font-weight: 600;
-}
-.van-cta-el {
-    align-self: end;
-    margin: 0;
-    padding: 0;
 }

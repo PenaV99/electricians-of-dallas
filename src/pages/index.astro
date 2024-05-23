@@ -17,24 +17,18 @@ const pageTitle = "Electricians of Dallas";
                 min-width: 100%;
                 border: 1px solid red;
             }
-            .cta-contact-wrapper {
+            .cta-wrapper {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
+                flex-direction: row;
+                justify-content: space-between;
                 color: var(--clr-light);
             }
             .slogan-el {
                 margin: 0 auto;
-                text-align: center;
                 padding: 0 1rem;
                 color: #FF3131;
-                border-bottom: 1px solid var(--clr-dark);
-            }
-            .cta-contact {
-                background-color: var(--clr-dark);
-                justify-content: space-evenly;
-                padding: .3rem;
-                flex: 1;
+                text-align: center;
+                border-top: 2px solid #03045e;
             }
             .services-section {
                 background-color: var(--clr-light);
@@ -45,20 +39,43 @@ const pageTitle = "Electricians of Dallas";
                 justify-content: space-around;
                 min-width: 100%;
                 margin: 0 auto;
-                border-bottom: 1px solid var(--clr-accent);
             }
             .business-info {
-                color: var(--clr-light);
+                color: var(--clr-dark);
             }
+            .header-contact-button {
+            color: var(--clr-light);
+            font-weight: 700;
+            background-color: var(--clr-accent);
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: .2rem;
+            }
+
             @media (min-width: 1024px) {
             .services__list {
                 padding: 0 2em;
                 font-weight: 600;
             }
+            .slogan-el {
+                flex: 1;
+            }
+            .cta-wrapper {
+                flex-direction: row;
+            }
+            .cta-contact {
+                display: flex;
+                flex-direction: row;
+            }
             }
         </style>
     </head>
     <body>
+        <button class="header-contact-button">
+            <h3>Free Estimates</h3>
+            <h3>Call Now <i class="fa-solid fa-phone-flip fa-bounce" style="color:#FF3131 ;"></i> (214) 000-000</h3>
+        </button>
         <Header />
         <section class="services-section">
             <ul class="services__list">
@@ -69,15 +86,11 @@ const pageTitle = "Electricians of Dallas";
                 <li><h3>General</h3></li> 
             </ul>
         </section>
-        <section class="cta-contact-wrapper">
-            <h1 class="slogan-el"><em>Your electricians for life</em></h1>
-            <div class="cta-contact">
-                <h3><i class="fa-solid fa-location-dot" style="color: #FF3131;"></i>Carrollton, TX</h3>
-                <h3><i class="fa-solid fa-phone" style="color: #007ea7;"></i>214-000-000</h3>
-            </div>
+        <section class="cta-wrapper">
+            <h1 class="slogan-el"><em>Your Electricians <span>For Life</span></em></h1>
         </section>
         <section class="business-info">
-            
+            <h3>Family owned and operated Electrical Contracting Company servicing both residential and commercial customers since 2003.</h3>
         </section>
         <script>
             import "../scripts/menu.js";
