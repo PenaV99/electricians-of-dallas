@@ -122,16 +122,15 @@ header {
     width: 100%;
     justify-content: space-between;
     color: var(--clr-accent);
-    background-color: var(--clr-white);
     padding: .3rem;
     text-align: left;
-    border: 1px solid purple;
+    border-top: 10px solid var(--clr-accent);
+    background-color: var(--clr-light);
 }
 .van-cta-el {
     align-self: end;
     margin: 0;
     padding: 0;
-    border: 1px solid blue;
     }
 
 /*  HAMBURGER-MENU */
@@ -141,8 +140,8 @@ header {
     width: 50px;
     position: relative;
     cursor: pointer;
-    padding: 1rem;
-    margin-top: 0.3rem;
+    padding: 1rem; 
+    /* margin-top: 0.3rem; */
 }
 
 .ham-bar {
@@ -169,7 +168,7 @@ header {
 .hamburger-menu.active .bar-top {
     transform: translate(-50%, -50%) rotate(-315deg);
     top: 50%;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
 }
 .hamburger-menu.active .bar-mid {
     opacity: 0;
@@ -177,7 +176,7 @@ header {
 .hamburger-menu.active .bar-bottom {
     transform: translate(-50%, -50%) rotate(-225deg);
     top: 50%;
-    background-color: var(--clr-dark);
+    background-color: var(--clr-light);
 }
 /* NAV-MENU */
 .hidden-menu {
@@ -200,10 +199,8 @@ header {
 }
 .hidden-menu__list {
     width: 100%;
-    margin-top: 3rem;
-}
-.menu__logo {
-    border: 1px solid red;
+    margin-top: 5rem;
+    border: 1px solid pink;
 }
 .menu__logo img {
     width: 3rem;
