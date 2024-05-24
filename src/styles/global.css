@@ -140,6 +140,7 @@ header {
         transform 0.5ms,
         opacity 0.5ms,
         top 0.5ms;
+    z-index: 100;
 }
 
 .bar-top {
@@ -177,9 +178,10 @@ header {
     justify-content: space-between;
     transition: top 0.5s;
     top: 0;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     border-bottom: 10px solid var(--clr-accent);
+    z-index: 99;
 }
 .hidden-menu__list {
     width: 100%;

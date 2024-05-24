@@ -25,11 +25,14 @@ const pageTitle = "Electricians of Dallas";
                 min-width: 100%;
                 margin: 0 auto;
             }
+            .services__list li {
+            }
             .brand-hero {
+                padding: 3em 0;
                 color: var(--clr-accent);
             }
             .brand-slogan-el {
-                margin: .8em auto;
+                margin: auto;
                 color: #FF3131;
                 text-align: center;
             }
@@ -37,19 +40,18 @@ const pageTitle = "Electricians of Dallas";
                 display: block;
             }
             .brand-intro-el {
-
             }
             .call-button {
                 background-color: var(--clr-accent);
                 color: var(--clr-light);
                 width: 100%;
                 text-align: center;
-                margin: 3em auto;
+                margin: 2em 0;
                 padding: 1rem;
                 border: 8px solid #12B457;
             }
             .our-electricians {
-                background-color: yellow;
+                border-top: 8px solid var(--clr-dark);
             }
             @media (min-width: 1024px) {
             .header-contact-button {
@@ -62,13 +64,8 @@ const pageTitle = "Electricians of Dallas";
             .slogan-el span {
                 display: inline;
             }
-
-            .cta-wrapper {
-                flex-direction: row;
-            }
-            .cta-contact {
-                display: flex;
-                flex-direction: row;
+            .call-button {
+                width: 50%;
             }
             }
         </style>
@@ -86,7 +83,7 @@ const pageTitle = "Electricians of Dallas";
         </section>
         <section class="brand-hero">
             <h1 class="brand-slogan-el"><em>Your Electricians <span>For Life</span></em></h1>
-            <h3 class="brand-intro-el">Family owned and operated Electrical Contracting Company servicing both residential and commercial customers since 2003.</h3>
+            <h3 class="brand-intro-el">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas distinctio molestias, illum neque odit? Et veniam eveniet quos sed totam voluptas. Dicta, corporis nesciunt ut excepturi eius suscipit? Unde?</h3>
             <button class="call-button">
                 <h2>Free Estimates</h2>
                 <h3>Call Now <i class="fa-solid fa-phone-flip fa-bounce" style="color:#FF3131;"></i>
@@ -94,7 +91,8 @@ const pageTitle = "Electricians of Dallas";
             </button>
         </section>
         <section class="our-electricians">
-            <h1>We are <strong>Professionals</strong></h1>
+            <h1>20+ Years Experience</h1>
+            <h3>Family owned and operated Electrical Contracting Company servicing both residential and commercial customers since 2003.</h3>
         </section>
         <script>
             import "../scripts/menu.js";
