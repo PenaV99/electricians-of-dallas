@@ -13,30 +13,10 @@ const pageTitle = "Electricians of Dallas";
         <Typography />
         <title>{pageTitle}</title>
         <style>
-            .hero {
-                min-width: 100%;
-                border: 1px solid red;
-            }
-            .cta-wrapper {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                color: var(--clr-light);
-            }
-            .slogan-el {
-                margin: 0 auto;
-                padding: 0 1rem;
-                color: #FF3131;
-                text-align: center;
-            }
-            .slogan-el span {
-                display: block;
-            }
             .services-section {
                 background-color: var(--clr-light);
                 border-bottom: 2px solid var(--clr-accent);
                 border-top: 2px solid var(--clr-accent);
-                
             }
             .services__list {
                 display: flex;
@@ -45,19 +25,32 @@ const pageTitle = "Electricians of Dallas";
                 min-width: 100%;
                 margin: 0 auto;
             }
-            .business-info {
-                color: var(--clr-dark);
+            .brand-hero {
+                color: var(--clr-accent);
             }
-            .header-contact-button {
-            color: var(--clr-light);
-            font-weight: 700;
-            background-color: #136f63;
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            padding: .2rem;
+            .brand-slogan-el {
+                margin: .8em auto;
+                color: #FF3131;
+                text-align: center;
             }
+            .slogan-el span {
+                display: block;
+            }
+            .brand-intro-el {
 
+            }
+            .call-button {
+                background-color: var(--clr-accent);
+                color: var(--clr-light);
+                width: 100%;
+                text-align: center;
+                margin: 3em auto;
+                padding: 1rem;
+                border: 8px solid #12B457;
+            }
+            .our-electricians {
+                background-color: yellow;
+            }
             @media (min-width: 1024px) {
             .header-contact-button {
              justify-content: space-evenly;
@@ -91,11 +84,17 @@ const pageTitle = "Electricians of Dallas";
                 <li><h3>General</h3></li> 
             </ul>
         </section>
-        <section class="cta-wrapper">
-            <h1 class="slogan-el"><em>Your Electricians <span>For Life</span></em></h1>
+        <section class="brand-hero">
+            <h1 class="brand-slogan-el"><em>Your Electricians <span>For Life</span></em></h1>
+            <h3 class="brand-intro-el">Family owned and operated Electrical Contracting Company servicing both residential and commercial customers since 2003.</h3>
+            <button class="call-button">
+                <h2>Free Estimates</h2>
+                <h3>Call Now <i class="fa-solid fa-phone-flip fa-bounce" style="color:#FF3131;"></i>
+                <span>(214) 000-000</span></h3>
+            </button>
         </section>
-        <section class="business-info">
-            <h3>Family owned and operated Electrical Contracting Company servicing both residential and commercial customers since 2003.</h3>
+        <section class="our-electricians">
+            <h1>We are <strong>Professionals</strong></h1>
         </section>
         <script>
             import "../scripts/menu.js";

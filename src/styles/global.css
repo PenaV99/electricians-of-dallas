@@ -109,29 +109,13 @@ header {
     justify-content: space-between;
     align-items: top;
 }
-.green-logo {
-    width: 13rem;
-}
 .name-logo-el {
     display: flex;
     cursor: pointer;
 }
-.cta-contact {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    color: var(--clr-accent);
-    padding: .3rem;
-    text-align: left;
-    border-top: 10px solid var(--clr-accent);
-    background-color: var(--clr-light);
+.green-logo {
+    width: 13rem;
 }
-.van-cta-el {
-    align-self: end;
-    margin: 0;
-    padding: 0;
-    }
 
 /*  HAMBURGER-MENU */
 
@@ -141,7 +125,7 @@ header {
     position: relative;
     cursor: pointer;
     padding: 1rem; 
-    /* margin-top: 0.3rem; */
+    margin-top: 0.3rem;
 }
 
 .ham-bar {
@@ -197,21 +181,32 @@ header {
     width: 100%;
     border-bottom: 10px solid var(--clr-accent);
 }
-.header-contact-button {
-    background-color: #136f63;
-}
 .hidden-menu__list {
     width: 100%;
     margin-top: 5rem;
-    border: 1px solid pink;
 }
 .menu__logo img {
     width: 3rem;
     margin: 0 auto;
-    border: 1px solid blue;
 }
 .nav-items {
     color: var(--clr-accent);
     font-size: var(--fs-h3);
     font-weight: 600;
+}
+.cta-contact {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    color: var(--clr-accent);
+    padding: .3rem;
+    text-align: left;
+    border-top: 10px solid var(--clr-accent);
+    background-color: var(--clr-light);
+}
+.van-cta-el {
+    align-self: end;
+    margin: 0;
+    padding: 0;
 }
