@@ -63,9 +63,10 @@ fieldset {
     --fw-reg: 400;
     --fw-bold: 800;
 
-    --clr-light: #fff;
+    --clr-light: #fef9ef;
     --clr-dark: #212529;
     --clr-accent: #136f63;
+    --clr-highlight: #12B457;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
