@@ -31,8 +31,8 @@ const pageTitle = "Electricians of Dallas";
                 color: var(--clr-accent);
                 min-height: 50vh;
                 height: 80vh;
-                background-image: url('/skyline-dallas.png');
-                background-position: left;
+                background-image: url('/panel-wires.png');
+                background-position: 10% 19%;
                 background-size: cover;
                 background-repeat: no-repeat;
                 display: flex;
@@ -44,10 +44,11 @@ const pageTitle = "Electricians of Dallas";
                 margin: 0 auto;
                 color: var(--clr-light);
                 text-align: center;
+                font-style: italic;
                 text-shadow: 0px 0px 1px #FF3131;
-            }
+            }   
 
-            .slogan-el span {
+            .brand-slogan-el span {
                 display: block;
             }
             .brand-intro-el {
@@ -65,7 +66,7 @@ const pageTitle = "Electricians of Dallas";
                 box-shadow: 12px 12px 2px 1px var(--clr-dark);
                 margin-bottom: 1em;
             }
-            .our-electricians {
+            .our-electricians { 
                 border-top: 8px solid var(--clr-dark);
             }
 
@@ -75,18 +76,20 @@ const pageTitle = "Electricians of Dallas";
             }
             .brand-hero {
                 height: 80vh;
-                background-position: left 40%;
+                background-position: left 50%;
                 background-size: cover;
                 width: 100%;
+                align-items: end;
             }
             .brand-intro-el {
-                align-self: center;
+                align-self: end;
+                justify-self: center;
             }
             .services__list {
                 padding: 0 2em;
                 font-weight: 600;
             }
-            .slogan-el span {
+            .brand-slogan-el span {
                 display: inline;
             }
             .call-button {
@@ -107,8 +110,8 @@ const pageTitle = "Electricians of Dallas";
             </ul>
         </section>
         <section class="brand-hero">
-            <h1 class="brand-slogan-el"><em class="slogan">Your Electricians <span>For Life</span></em></h1>
-            <h1 class="brand-intro-el">Since 2003</h1>
+            <h1 class="brand-slogan-el">Your Electricians <span>For Life</span></h1>
+            <!-- <h1 class="brand-intro-el">Since 2003</h1> -->
             <button class="call-button">
                 <h2>Free Estimates</h2>
                 <h3>Call Now <i class="fa-solid fa-phone" style="color: var(--clr-light);"></i>
